@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
+        'cwr',
+        'f3b54d4e-209a-4f09-ae05-a9e95740bdef',
+        '1.0.0',
+        'us-east-2',
+        'https://client.rum.us-east-1.amazonaws.com/1.11.0/cwr.js',
+        {
+          sessionSampleRate: 1,
+          guestRoleArn: "arn:aws:iam::651644924182:role/RUM-Monitor-us-east-2-651644924182-1367464068661-Unauth",
+          identityPoolId: "us-east-2:c554e9ee-3bfe-4f63-9506-6d4d67cfb908",
+          endpoint: "https://dataplane.rum.us-east-2.amazonaws.com",
+          telemetries: ["performance","errors","http"],
+          allowCookies: true,
+          enableXRay: false
+        }
+      );
+    </script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
